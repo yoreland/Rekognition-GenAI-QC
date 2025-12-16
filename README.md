@@ -22,6 +22,8 @@ S3 Video → start_celebrity_recognition → SNS Notification → SQS Queue → 
 
 ### System Architecture
 
+![Architecture Diagram](architecture.png)
+
 The solution leverages AWS managed services for scalable, asynchronous video processing:
 
 - **Amazon Rekognition**: Celebrity detection engine
@@ -64,9 +66,6 @@ python3 extract_frames_with_celebrities.py
 ## 📊 Results Demo
 
 ### Image Detection Results
-
-**Original Image:**
-![Original Image](jeff_portrait.jpg)
 
 **Detection Result: Jeff Bezos (100.0% confidence)**
 ![Image Detection Result](celebrity_detected_jeff_portrait.jpg)
@@ -124,16 +123,7 @@ def analyze_video():
         extract_frames_with_boxes()
 ```
 
-## 🔧 Technical Features
-
-- **Asynchronous Processing**: Handles large video files efficiently
-- **Multi-Celebrity Detection**: Identifies multiple celebrities per frame
-- **Color-Coded Annotations**: Different colors for different individuals
-- **Confidence Scoring**: Reliability metrics for each detection
-- **Keyframe Extraction**: Automated selection of representative frames
-- **Scalable Architecture**: Built on AWS managed services
-
-## 💰 Cost Optimization
+## 💰 Cost Estimation
 
 - **Image Analysis**: $0.001 per image
 - **Video Analysis**: $0.10 per minute
@@ -146,14 +136,6 @@ def analyze_video():
 - **Brand Safety**: Protect against unauthorized celebrity appearances
 - **Media Asset Management**: Catalog and tag multimedia content
 - **Quality Assurance**: Validate AI model outputs before deployment
-
-## 📈 Scalability & Extensions
-
-- Support for batch processing multiple files
-- Integration with content management systems
-- Real-time streaming video analysis
-- Custom celebrity database integration
-- Multi-language label support
 
 ## 🛠️ Troubleshooting
 

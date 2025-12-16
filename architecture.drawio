@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-12-16T11:54:00.000Z" agent="5.0" etag="abc123" version="24.7.17">
+<mxfile host="app.diagrams.net" modified="2024-12-16T12:01:00.000Z" agent="5.0" etag="def456" version="24.7.17">
   <diagram name="Rekognition-GenAI-QC" id="architecture">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,41 +10,41 @@
           <mxGeometry x="50" y="50" width="200" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="3" value="Local Image" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="50" y="100" width="100" height="60" as="geometry" />
+        <mxCell id="3" value="Local Image" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.image;" vertex="1" parent="1">
+          <mxGeometry x="70" y="100" width="60" height="60" as="geometry" />
         </mxCell>
         
-        <mxCell id="4" value="Rekognition API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="200" y="100" width="100" height="60" as="geometry" />
+        <mxCell id="4" value="Amazon Rekognition" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#4AB29A;gradientDirection=north;fillColor=#116D5B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.rekognition;" vertex="1" parent="1">
+          <mxGeometry x="220" y="100" width="60" height="60" as="geometry" />
         </mxCell>
         
         <mxCell id="5" value="OpenCV Annotation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="350" y="100" width="100" height="60" as="geometry" />
+          <mxGeometry x="370" y="115" width="100" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="6" value="Output Image" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="500" y="100" width="100" height="60" as="geometry" />
+        <mxCell id="6" value="Output Image" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.image;" vertex="1" parent="1">
+          <mxGeometry x="520" y="100" width="60" height="60" as="geometry" />
         </mxCell>
         
         <!-- Arrows for Image Flow -->
         <mxCell id="7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3" target="4">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="160" y="130" as="sourcePoint" />
-            <mxPoint x="190" y="130" as="targetPoint" />
+            <mxPoint x="140" y="130" as="sourcePoint" />
+            <mxPoint x="210" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
         <mxCell id="8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="4" target="5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="310" y="130" as="sourcePoint" />
-            <mxPoint x="340" y="130" as="targetPoint" />
+            <mxPoint x="290" y="130" as="sourcePoint" />
+            <mxPoint x="360" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
         <mxCell id="9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="5" target="6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="460" y="130" as="sourcePoint" />
-            <mxPoint x="490" y="130" as="targetPoint" />
+            <mxPoint x="480" y="130" as="sourcePoint" />
+            <mxPoint x="510" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
@@ -53,69 +53,69 @@
           <mxGeometry x="50" y="220" width="300" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="11" value="S3 Video" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="50" y="270" width="80" height="60" as="geometry" />
+        <mxCell id="11" value="Amazon S3" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#60A337;gradientDirection=north;fillColor=#277116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
+          <mxGeometry x="60" y="270" width="60" height="60" as="geometry" />
         </mxCell>
         
-        <mxCell id="12" value="Rekognition&#xa;start_celebrity_recognition" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="160" y="270" width="120" height="60" as="geometry" />
+        <mxCell id="12" value="Amazon Rekognition" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#4AB29A;gradientDirection=north;fillColor=#116D5B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.rekognition;" vertex="1" parent="1">
+          <mxGeometry x="190" y="270" width="60" height="60" as="geometry" />
         </mxCell>
         
-        <mxCell id="13" value="SNS Topic" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="310" y="270" width="80" height="60" as="geometry" />
+        <mxCell id="13" value="Amazon SNS" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#FF4F8B;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sns;" vertex="1" parent="1">
+          <mxGeometry x="320" y="270" width="60" height="60" as="geometry" />
         </mxCell>
         
-        <mxCell id="14" value="SQS Queue" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="420" y="270" width="80" height="60" as="geometry" />
+        <mxCell id="14" value="Amazon SQS" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#FF4F8B;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sqs;" vertex="1" parent="1">
+          <mxGeometry x="450" y="270" width="60" height="60" as="geometry" />
         </mxCell>
         
         <mxCell id="15" value="Poll Results" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="530" y="270" width="80" height="60" as="geometry" />
+          <mxGeometry x="540" y="285" width="80" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="16" value="Extract&#xa;Keyframes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="640" y="270" width="80" height="60" as="geometry" />
+        <mxCell id="16" value="Extract Keyframes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="650" y="285" width="80" height="30" as="geometry" />
         </mxCell>
         
         <!-- Arrows for Video Flow -->
         <mxCell id="17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="11" target="12">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="140" y="300" as="sourcePoint" />
-            <mxPoint x="150" y="300" as="targetPoint" />
+            <mxPoint x="130" y="300" as="sourcePoint" />
+            <mxPoint x="180" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
         <mxCell id="18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="12" target="13">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="290" y="300" as="sourcePoint" />
-            <mxPoint x="300" y="300" as="targetPoint" />
+            <mxPoint x="260" y="300" as="sourcePoint" />
+            <mxPoint x="310" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
         <mxCell id="19" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="13" target="14">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="300" as="sourcePoint" />
-            <mxPoint x="410" y="300" as="targetPoint" />
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
         <mxCell id="20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="14" target="15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="510" y="300" as="sourcePoint" />
-            <mxPoint x="520" y="300" as="targetPoint" />
+            <mxPoint x="520" y="300" as="sourcePoint" />
+            <mxPoint x="530" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
         <mxCell id="21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="15" target="16">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="620" y="300" as="sourcePoint" />
-            <mxPoint x="630" y="300" as="targetPoint" />
+            <mxPoint x="630" y="300" as="sourcePoint" />
+            <mxPoint x="640" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
         <!-- IAM Role -->
-        <mxCell id="22" value="IAM Role" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="310" y="380" width="80" height="40" as="geometry" />
+        <mxCell id="22" value="AWS IAM" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.iam;" vertex="1" parent="1">
+          <mxGeometry x="320" y="380" width="60" height="60" as="geometry" />
         </mxCell>
         
         <!-- Connection from IAM to SNS -->
