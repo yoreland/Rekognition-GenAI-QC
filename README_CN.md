@@ -67,9 +67,6 @@ python3 extract_frames_with_celebrities.py
 
 ### 图片检测结果
 
-**原始图片:**
-![原始图片](jeff_portrait.jpg)
-
 **检测结果: Jeff Bezos (100.0% 置信度)**
 ![图片检测结果](celebrity_detected_jeff_portrait.jpg)
 
