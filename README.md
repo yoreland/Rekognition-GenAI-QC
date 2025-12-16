@@ -1,5 +1,7 @@
 # Rekognition GenAI-QC
 
+[中文文档 / Chinese Documentation](README_CN.md)
+
 A comprehensive solution for quality control of AI-generated multimedia content using Amazon Rekognition's celebrity detection capabilities.
 
 ## 🎯 Scenario Description
